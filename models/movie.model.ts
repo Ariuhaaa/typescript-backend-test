@@ -43,7 +43,6 @@ const movieSchema = new Schema<IMovie>({
     year: Number,
     imdb: {
         rating: Number,
-        
     },
     type: String,
     tomatoes: {},

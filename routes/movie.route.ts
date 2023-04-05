@@ -1,9 +1,9 @@
-import { create, getAll } from "../controller/movie.controller";
+import { getOne, getAll } from "../controllers/movie.controller";
 
 import { Router } from "express";
 
 const route = Router();
 
-route.get("/movie", getAll).post("/movie", create);
+route.get("/movies", getAll).post("/movie/:id", getOne);
 
 export default route;
